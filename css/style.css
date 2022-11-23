@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensures elements padding and border are included in their width&height */
+}
+
+#wrapper {
+  border: 5px solid black;
+  width: 1390px;
+  height: 750px;
+  position: absolute;
+  top: 50%; /* position wrapper to center*/
+  left: 50%; /* position wrapper to center*/
+  transform: translate(-50%, -50%); /* aligns */
+}
+
+#meSprite,
+#cabin1Sprite,
+#cabin2Sprite,
+#vdirtPath,
+#hdirtPath,
+#pond,
+#info {
+  /*allows assets to load, but display none until drawn with canvas*/
+  display: none;
+}
+
+canvas {
+  background: url(/images/background.png);
+}
